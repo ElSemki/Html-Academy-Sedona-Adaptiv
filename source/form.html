@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image site-logo" src="img/page/logotype-mobile.svg.svg" width="102" height="84"
+        alt="Логотип сайта Sedona">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link" href="#">Форма отзывов</a>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Html academy</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+
+    <h1 class="visually-hidden">Страница с формой для отзыва</h1>
+
+    <section class="form-intro">
+      <div class="form-intro__wrapper">
+        <h2 class="form-intro__title">Оставьте свой отзыв</h2>
+        <p class="form-intro__desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+          достопримечательностях</p>
+      </div>
+    </section>
+
+    <section class="all-form-section">
+      <div class="all-form-section__wrapper">
+        <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="introduce-yourself">
+            <legend class="introduce-yourself__caption">Представьтесь:</legend>
+            <p class="introduce-yourself__item">
+              <label class="introduce-yourself__label" for="name">Имя*:</label>
+              <input class="introduce-yourself__input" id="name" type="text" name="name" placeholder="Петр" required>
+            </p>
+            <p class="introduce-yourself__item">
+              <label class="introduce-yourself__label" for="surname">Фамилия*:</label>
+              <input class="introduce-yourself__input" id="surname" type="text" name="name" placeholder="Иванов" required>
+            </p>
+            <p class="introduce-yourself__item">
+              <label class="introduce-yourself__label" for="patronymic">Отчество:</label>
+              <input class="introduce-yourself__input" id="patronymic" type="text" name="patronymic" placeholder="Александрович" required>
+            </p>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__site-tag">
+        <p class="site-tag">#visitsedona</p>
+      </div>
+      <div class="page-footer__social">
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">Мы в Twitter</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">Мы в Facebook</span>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">
+                <span class="visually-hidden">Мы в Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-footer__copyright">
+        <div class="copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="#">HTML Academy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
