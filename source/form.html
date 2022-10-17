@@ -39,32 +39,106 @@
 
     <h1 class="visually-hidden">Страница с формой для отзыва</h1>
 
-    <section class="form-intro">
-      <div class="form-intro__wrapper">
-        <h2 class="form-intro__title">Оставьте свой отзыв</h2>
-        <p class="form-intro__desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
-          достопримечательностях</p>
-      </div>
-    </section>
+    <section class="form-section">
 
-    <section class="all-form-section">
-      <div class="all-form-section__wrapper">
-        <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="introduce-yourself">
-            <legend class="introduce-yourself__caption">Представьтесь:</legend>
+      <div class="form-section__wrapper">
+
+        <header class="form-section__header inner-header">
+          <div class="inner-header__wrapper">
+            <p class="inner-header__title">
+              Оставьте свой отзыв
+            </p>
+            <p class="inner-header__subtitle">
+              Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+              достопримечательностях
+            </p>
+          </div>
+        </header>
+
+        <form class="form-section__form main-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="main-form__item introduce-yourself">
+            <legend class="introduce-yourself__caption fieldset-caption">Представьтесь:</legend>
             <p class="introduce-yourself__item">
               <label class="introduce-yourself__label" for="name">Имя*:</label>
               <input class="introduce-yourself__input" id="name" type="text" name="name" placeholder="Петр" required>
             </p>
             <p class="introduce-yourself__item">
               <label class="introduce-yourself__label" for="surname">Фамилия*:</label>
-              <input class="introduce-yourself__input" id="surname" type="text" name="name" placeholder="Иванов" required>
+              <input class="introduce-yourself__input" id="surname" type="text" name="surname" placeholder="Иванов"
+                required>
             </p>
             <p class="introduce-yourself__item">
               <label class="introduce-yourself__label" for="patronymic">Отчество:</label>
-              <input class="introduce-yourself__input" id="patronymic" type="text" name="patronymic" placeholder="Александрович" required>
+              <input class="introduce-yourself__input" id="patronymic" type="text" name="patronymic"
+                placeholder="Александрович" required>
             </p>
           </fieldset>
+
+          <fieldset class="main-form__item contact-information">
+            <legend class="contact-information__caption fieldset-caption">Контактная информация:</legend>
+            <p class="contact-information__item">
+              <label class="contact-information__label" for="tel">Контактный телефон*:</label>
+              <input class="contact-information__input contact-information__input--tel" id="tel" type="text" name="tel"
+                placeholder="Введите телефон" required>
+            </p>
+            <p class="contact-information__item">
+              <label class="contact-information__label" for="email">Электронная почта*:</label>
+              <input class="contact-information__input contact-information__input--email" id="email" type="text"
+                name="email" placeholder="Введите e-mail" required>
+            </p>
+          </fieldset>
+
+          <fieldset class="main-form__item impression">
+            <legend class="impression__caption fieldset-caption">Сетка:</legend>
+            <ul class="impression__list">
+              <li class="impression__item">
+                <input class="impression__input" type="radio" name="impression" value="good" id="good" checked>
+                <label class="impression__label" for="good">Скорее положительное</label>
+              </li>
+              <li class="impression__item">
+                <input class="impression__input" type="radio" name="impression" value="negative" id="negative">
+                <label class="impression__label" for="negative">Скорее отрицательное</label>
+              </li>
+              <li class="impression__item">
+                <input class="impression__input" type="radio" name="impression" value="difficult" id="difficult">
+                <label class="impression__label" for="difficult">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="main-form__item attraction">
+            <legend class="attraction__caption fieldset-caption">Особенности:</legend>
+            <ul class="attraction__list">
+              <li class="attraction__item">
+                <input class="attraction__checkbox" type="checkbox" id="devils-bridge" name="devils-bridge" checked>
+                <label class="attraction__label" for="devils-bridge">Мост Дьявола</label>
+              </li>
+              <li class="attraction__item">
+                <input class="attraction__checkbox" type="checkbox" id="mountain-bell" name="mountain-bell" checked>
+                <label class="attraction__label" for="mountain-bell">Гора-Колокол</label>
+              </li>
+              <li class="attraction__item">
+                <input class="attraction__checkbox" type="checkbox" id="slide-park" name="slide-park" checked>
+                <label class="attraction__label" for="slide-park">Слайд-парк</label>
+              </li>
+              <li class="attraction__item">
+                <input class="attraction__checkbox" type="checkbox" id="red-rocks" name="red-rocks">
+                <label class="attraction__label" for="red-rocks">Красные скалы</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="main-form__item emotions">
+            <legend class="emotions__caption fieldset-caption">Опишите свои эмоции:</legend>
+            <p class="emotions__item">
+              <label class="emotions__label" for="emotions">
+                <span class="visually-hidden">Здесь вы можете описать свои эмоции:</span>
+              </label>
+              <textarea class="emotions__textarea" id="emotions" name="emotions"
+                placeholder="Опишите подробно все свои восторги" required></textarea>
+            </p>
+          </fieldset>
+          <button class="main-form__button button" type="submit">Отправить отзыв</button>
         </form>
       </div>
     </section>
