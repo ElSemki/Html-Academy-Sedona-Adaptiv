@@ -1,0 +1,28 @@
+.other-reasons {
+  padding: 10px 20px 24px;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.other-reasons__item {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.other-reasons__item:last-child {
+  padding-bottom: 0px;
+}
+
+.other-reasons__item::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 1px;
+  background-color: #D6D6D6;
+  bottom: 0px;
+  left: 0px;
+}
+
+.other-reasons__item:last-child::after {
+  display: none;
+}
