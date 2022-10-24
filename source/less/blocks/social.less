@@ -1,0 +1,28 @@
+.social {
+  width: 150px;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  background-color: #81B3D2;
+
+  &:hover,
+  &focus {
+    background-color: #669EC0;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}
