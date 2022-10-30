@@ -1,11 +1,18 @@
 .other-reasons {
-  text-align: center;
   background-color: #eeeeee;
+}
+
+.other-reasons__list {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .other-reasons__item {
   position: relative;
   padding-bottom: 10px;
+  text-align: center;
 
   &::after {
     content: "";
