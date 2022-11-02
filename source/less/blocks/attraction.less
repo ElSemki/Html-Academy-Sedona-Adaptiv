@@ -1,8 +1,35 @@
+.attraction {
+  @media (min-width: @tablet-width) {
+    width: 455px;
+    margin: 0 auto;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+  }
+}
+
 .attraction__caption {
   margin: 0 auto;
   margin-bottom: 36px;
 }
 
+.attraction__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 60px;
+  }
+}
+
 .attraction__item {
   margin-bottom: 54px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
