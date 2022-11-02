@@ -7,10 +7,6 @@
   background-color: #81b3d2;
   border: none;
 
-  @media (min-width: @tablet-width) {
-    padding: 16px 121px;
-  }
-
   &:hover,
   &:focus {
     background-color: #669ec0;
@@ -18,6 +14,18 @@
 
   &:active .active-opacity-text {
     opacity: 0.3;
+  }
+
+  &--interest {
+    @media (min-width: @tablet-width) {
+      padding: 16px 121px;
+    }
+  }
+
+  &--main-form {
+    @media (min-width: @desktop-width) {
+      padding: 16px 121px;
+    }
   }
 
   &--attraction {
