@@ -4,21 +4,9 @@
   line-height: 26px;
   color: #000000;
 
-  @media (max-width: @mobile-width) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 648px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 960px;
   }
 }
 
@@ -33,6 +21,40 @@
   }
 }
 
+.main-form__item--impression {
+  @media (min-width: @tablet-width) {
+    order: -1;
+  }
+}
+
+.main-form__item--contact-information {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
+.main-form__item--attraction {
+  @media (min-width: @tablet-width) {
+    width: 455px;
+    margin: 0 auto;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+  }
+}
+
+.main-form__item--emotions {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
+
 .main-form__legend {
   display: none;
 
@@ -40,5 +62,13 @@
     display: block;
     justify-self: end;
     font-weight: 400;
+  }
+}
+
+.main-form__button {
+  margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
   }
 }

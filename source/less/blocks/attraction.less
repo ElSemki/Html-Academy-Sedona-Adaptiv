@@ -1,16 +1,3 @@
-.attraction {
-  @media (min-width: @tablet-width) {
-    width: 455px;
-    margin: 0 auto;
-    grid-column-start: 1;
-    grid-column-end: -1;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: auto;
-  }
-}
-
 .attraction__caption {
   margin: 0 auto;
   margin-bottom: 36px;
@@ -18,11 +5,15 @@
 
 .attraction__list {
   @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     column-gap: 40px;
     row-gap: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
   }
 }
 

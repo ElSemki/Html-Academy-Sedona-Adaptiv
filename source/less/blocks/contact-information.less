@@ -1,15 +1,22 @@
 .contact-information {
-  @media (min-width: @tablet-width) {
-    grid-column-start: 1;
-    grid-column-end: -1;
-  }
-
   @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .contact-information__caption {
   margin: 0 auto;
+}
+
+
+.contact-information__item {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+  }
 }

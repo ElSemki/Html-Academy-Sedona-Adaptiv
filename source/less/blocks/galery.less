@@ -1,6 +1,18 @@
 .galery__header {
   padding-bottom: 20px;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    margin-bottom: 67px;
+  }
 }
 
 .galery__photo-list {
