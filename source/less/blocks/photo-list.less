@@ -3,6 +3,16 @@
   font-size: 14px;
   line-height: 24px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .photo-list__item {
@@ -13,7 +23,32 @@
   }
 
   @media (min-width: @tablet-width) {
+    &:nth-child(1) {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+
     border-bottom: none;
+  }
+}
+
+.photo-list__signature {
+  @media (min-width: @tablet-width) {
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+  }
+}
+
+.photo-list__info-image-container {
+  @media (min-width: @tablet-width) {
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
   }
 }
 
