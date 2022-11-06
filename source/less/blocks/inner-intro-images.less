@@ -1,21 +1,17 @@
 .inner-intro-images {
-  min-height: 214px;
   background-image:
     url("../../img/form-page/SEDONA.svg"),
-    url("../../img/form-page/back-desktop.jpg");
+    url("../../img/index-page/intro-triangle-mobile.svg"),
+    url("../../img/form-page/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 45px 105px, 0 0;
+  background-position: 45px 55px, bottom, 50%;
 
   @media (min-width: @tablet-width) {
-    min-height: 518px;
+    background-image:
+      url("../../img/form-page/sedona-desktop.svg"),
+      url("../../img/index-page/intro-triangle.svg"),
+      url("../../img/form-page/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 50.5% 45%, bottom, 50%;
   }
-}
-
-.inner-intro-images--photo {
-  background-image:
-    url("../../img/form-page/SEDONA.svg"),
-    url("../../img/form-page/intro-triangle.svg"),
-    url("../../img/form-page/back-desktop.jpg");
-  background-repeat: no-repeat;
-  background-position: 45px 105px, bottom, 0 0;
 }

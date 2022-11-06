@@ -1,5 +1,6 @@
 .introduce-yourself__caption {
   margin: 0 auto;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     margin-left: 0;
@@ -10,5 +11,10 @@
 .introduce-yourself__item {
   display: flex;
   align-items: center;
-  column-gap: 10px;
+  column-gap: 13px;
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
