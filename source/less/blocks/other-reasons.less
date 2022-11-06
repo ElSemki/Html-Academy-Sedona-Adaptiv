@@ -3,6 +3,10 @@
 }
 
 .other-reasons__list {
+  @media (max-width: @mobile-width) {
+    padding: 0 35px;
+  }
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -12,12 +16,28 @@
 .other-reasons__item {
   position: relative;
   text-align: center;
+  padding-bottom: 25px;
 
   &:not(:last-child) {
+    margin-bottom: 25px;
     border-bottom: 1px solid #d6d6d6;
 
     @media (min-width: @tablet-width) {
       border-bottom: 0;
     }
   }
+}
+
+.other-reasons__title {
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.other-reasons__number {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.other-reasons__subtitle {
+  margin: 0;
 }
