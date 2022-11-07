@@ -16,6 +16,7 @@
 }
 
 .photo-list__item {
+  padding-bottom: 13px;
   border-bottom: 1px solid #e5e5e5;
 
   &:not(:last-child) {
@@ -30,6 +31,10 @@
 
     border-bottom: none;
   }
+}
+
+.photo-list__image {
+  margin-bottom: 6px;
 }
 
 .photo-list__signature {
@@ -54,9 +59,34 @@
 
 .photo-list__author {
   margin: 0;
+  margin-bottom: 10px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #333333;
   text-transform: none;
+}
+
+.photo-list__like {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70px;
+  margin: 0;
+}
+
+.photo-list__like-button {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+
+  &:hover path,
+  &:focus path {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

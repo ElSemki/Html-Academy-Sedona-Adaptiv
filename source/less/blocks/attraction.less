@@ -1,6 +1,6 @@
 .attraction__caption {
   margin: 0 auto;
-  margin-bottom: 36px;
+  margin-bottom: 28px;
 }
 
 .attraction__list {
@@ -18,9 +18,15 @@
 }
 
 .attraction__item {
-  margin-bottom: 54px;
+  &:not(:last-child) {
+    margin-bottom: 54px;
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
+}
+
+.attraction__label {
+  padding-left: 53px;
 }
