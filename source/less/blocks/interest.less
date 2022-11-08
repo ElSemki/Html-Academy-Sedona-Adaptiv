@@ -1,14 +1,43 @@
 .interest {
   line-height: 24px;
+
+  br {
+    @media (max-width: @mobile-width) {
+      display: none;
+    }
+  }
 }
 
 .interest__wrapper {
   text-align: center;
   margin-bottom: 49px;
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    margin: 0 auto;
+  }
+}
+
+.interest__title {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 35px;
+  }
 }
 
 .interest__subtitle {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 43px;
+  }
+}
+
+.interest__button {
+  width: 100%;
 }
 
 .interest__map img {
