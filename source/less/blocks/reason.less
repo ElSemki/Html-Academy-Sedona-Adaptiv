@@ -3,6 +3,12 @@
   color: #ffffff;
   background-color: #81b3d2;
 
+  br {
+    @media (max-width: @mobile-width) {
+      display: none;
+    }
+  }
+
   &--city {
     padding: 85px 10px 25px;
     background-image: url("../../img/index-page/white-border.png");
@@ -10,7 +16,12 @@
     background-position: top;
 
     @media (min-width: @tablet-width) {
+      padding: 40px 15px 25px;
       background-image: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 46px 55px 25px;
     }
   }
 
@@ -27,4 +38,10 @@
   margin: 0;
 
   color: inherit;
+}
+
+.reason__reason-number {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 21px;
+  }
 }

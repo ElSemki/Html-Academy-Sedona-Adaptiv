@@ -1,3 +1,11 @@
+.benefits {
+  @media (max-width: 1199px) {
+    br {
+      display: none;
+    }
+  }
+}
+
 .benefits__list {
   @media (min-width: @tablet-width) {
     display: grid;
@@ -8,14 +16,41 @@
 .benefits__item {
   display: flex;
   flex-direction: column;
-  padding-left: 50px;
+  padding: 0 20px 0 50px;
   margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+    align-items: center;
     text-align: center;
 
+    &:nth-child(1) {
+      padding-left: 31px;
+      padding-right: 31px;
+    }
+
     &:nth-child(2) {
+      padding-left: 31px;
+      padding-right: 31px;
       order: 3;
+    }
+
+    &:nth-child(3) {
+      padding-left: 49px;
+      padding-right: 49px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:nth-child(1) {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+
+    &:nth-child(2) {
+      padding-left: 80px;
+      padding-right: 80px;
     }
   }
 }
@@ -23,6 +58,10 @@
 .benefits__title {
   position: relative;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 7px;
+  }
 
   &::before {
     content: "";
@@ -33,17 +72,40 @@
     height: 38px;
     background-repeat: no-repeat;
     background-position: 0 0;
+
+    @media (min-width: @tablet-width) {
+      position: relative;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 75px;
+      height: 75px;
+      margin-bottom: 24px;
+    }
   }
 
   &--house::before {
     background-image: url("../../img/index-page/icon-house.svg");
+
+    @media (min-width: @tablet-width) {
+      background-size: 75px 72px;
+    }
   }
 
   &--eat::before {
     background-image: url("../../img/index-page/icon-burger.svg");
+
+    @media (min-width: @tablet-width) {
+      background-size: 76px 68px;
+    }
   }
 
   &--souvenirs::before {
     background-image: url("../../img/index-page/icon-gift.svg");
+
+    @media (min-width: @tablet-width) {
+      left: 20px;
+      background-size: 64px 75px;
+    }
   }
 }
