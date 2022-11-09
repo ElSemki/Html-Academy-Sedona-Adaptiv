@@ -7,11 +7,13 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 50px;
+    row-gap: 70px;
   }
 }
 
 .main-form__item {
+  position: relative;
+
   &:not(:last-of-type) {
     margin-bottom: 20px;
     border-bottom: 1px solid #e5e5e5;
@@ -25,13 +27,33 @@
 
 .main-form__item--introduce-yourself {
   padding-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .main-form__item--impression {
   padding-bottom: 43px;
 
   @media (min-width: @tablet-width) {
+    padding: 0;
     order: -1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 1px;
+      left: 100%;
+      width: 1px;
+      height: 292px;
+      background-color: #dbdbdb;
+    }
   }
 }
 
