@@ -47,4 +47,31 @@
       line-height: 26px;
     }
   }
+
+  &--legend-decor {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      align-items: center;
+
+      &::before,
+      &::after {
+        content: "";
+        width: 123px;
+        height: 1px;
+        background-color: #dbdbdb;
+
+        @media (min-width: @desktop-width) {
+          width: 280px;
+        }
+      }
+
+      &::before {
+        margin-right: 46px;
+      }
+
+      &::after {
+        margin-left: 46px;
+      }
+    }
+  }
 }

@@ -85,18 +85,24 @@
           </fieldset>
 
           <fieldset class="main-form__item main-form__item--contact-information contact-information container">
-            <legend class="contact-information__caption title title--legend">Контактная информация:</legend>
-            <p class="contact-information__item contact-information__item--tel">
+            <legend class="contact-information__caption title title--legend title--legend-decor">Контактная информация:</legend>
+            <p class="contact-information__item">
               <label class="contact-information__label user-info-label" for="tel">
                 <span class="contact-information__desktop-hidden-text">Контактный</span>
                 телефон*:</label>
-              <input class="contact-information__input user-info-input" id="tel" type="text" name="tel"
+              <input class="contact-information__input user-info-input user-info-input--contacts" id="tel" type="text" name="tel"
                 placeholder="Введите телефон" required>
+                <button class="contact-information__button contact-information__button--tel" type="button">
+                  <span class="visually-hidden">Номера телефонов</span>
+                </button>
             </p>
-            <p class="contact-information__item contact-information__item--email">
+            <p class="contact-information__item">
               <label class="contact-information__label user-info-label" for="email">Электронная почта*:</label>
-              <input class="contact-information__input user-info-input" id="email" type="text" name="email"
+              <input class="contact-information__input user-info-input user-info-input--contacts" id="email" type="text" name="email"
                 placeholder="Введите e-mail" required>
+                <button class="contact-information__button contact-information__button--email" type="button">
+                  <span class="visually-hidden">Электронные почты</span>
+                </button>
             </p>
           </fieldset>
 
@@ -119,7 +125,7 @@
           </fieldset>
 
           <fieldset class="main-form__item attraction main-form__item--attraction container">
-            <legend class="attraction__caption title title--legend">Посещенные достопримечательности:</legend>
+            <legend class="attraction__caption title title--legend title--legend-decor">Посещенные достопримечательности:</legend>
             <ul class="attraction__list">
               <li class="attraction__item">
                 <input class="attraction__checkbox visually-hidden" type="checkbox" id="devils-bridge" name="devils-bridge" checked>
@@ -141,7 +147,7 @@
           </fieldset>
 
           <fieldset class="main-form__item main-form__item--emotions emotions container">
-            <legend class="emotions__caption title title--legend">Опишите свои эмоции:</legend>
+            <legend class="emotions__caption title title--legend title--legend-decor">Опишите свои эмоции:</legend>
             <p class="emotions__item">
               <label class="emotions__label" for="emotions">
                 <span class="visually-hidden">Здесь вы можете описать свои эмоции:</span>
