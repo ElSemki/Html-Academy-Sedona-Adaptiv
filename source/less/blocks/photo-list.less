@@ -31,30 +31,39 @@
 
     border-bottom: none;
   }
+
+  &:nth-child(3) {
+    & .photo-list__info-image-container {
+      @media (min-width: @tablet-width) {
+        background-color: #eaeaea;
+      }
+
+      @media (min-width: @desktop-width) {
+        background-color: transparent;
+      }
+    }
+  }
 }
 
-.photo-list__image {
+.photo-list__photo-container {
   margin-bottom: 6px;
-}
-
-.photo-list__signature {
-  @media (min-width: @tablet-width) {
-    background-color: #f2f2f2;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-color: transparent;
-  }
 }
 
 .photo-list__info-image-container {
   @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
     background-color: #f2f2f2;
   }
 
   @media (min-width: @desktop-width) {
     background-color: transparent;
   }
+}
+
+.photo-list__signature {
+  margin: 0;
 }
 
 .photo-list__author {

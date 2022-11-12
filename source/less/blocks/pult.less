@@ -1,0 +1,30 @@
+.pult__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    & path {
+      fill: #ffffff;
+    }
+  }
+}
+
+.pult__button:hover path,
+.pult__button:focus path {
+  fill: #333333;
+
+  @media (min-width: @tablet-width) {
+    fill: #ffffff;
+    opacity: 0.6;
+  }
+}
+
+.pult__button:active path {
+  fill: #333333;
+  opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    fill: #ffffff;
+  }
+}
