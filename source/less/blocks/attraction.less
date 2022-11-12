@@ -1,29 +1,39 @@
 .attraction__caption {
   margin: 0 auto;
   margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 61px;
+  }
 }
 
 .attraction__list {
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
-    row-gap: 60px;
+    column-gap: 58px;
+    row-gap: 63px;
+    margin: 0 78px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 40px;
+    column-gap: 48px;
+    margin: 0;
   }
 }
 
 .attraction__item {
   &:not(:last-child) {
     margin-bottom: 54px;
-  }
 
-  @media (min-width: @tablet-width) {
-    margin-bottom: 0;
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
