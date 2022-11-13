@@ -51,9 +51,10 @@
 
 .photo-list__info-image-container {
   @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr min-content;
     padding: 20px;
+    column-gap: 20px;
     align-items: center;
     background-color: #f2f2f2;
   }
