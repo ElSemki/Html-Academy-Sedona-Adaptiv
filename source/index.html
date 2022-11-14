@@ -15,8 +15,12 @@
     <header class="page__header page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
-          <img class="site-logo" src="img/index-page/logotype-mobile.svg" width="102" height="84"
-            alt="Логотип сайта Sedona">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/index-page/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/index-page/logotype-tablet.svg">
+            <img class="site-logo" src="img/index-page/logotype-mobile.svg" width="102" height="84"
+              alt="Логотип сайта Sedona">
+          </picture>
         </a>
         <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
@@ -116,8 +120,14 @@
               Если вы осмелитесь, конечно
             </p>
           </div>
-          <img src="img/index-page/photo-bridge.png" width="520" height="256"
-            alt="Огромный скалисты мост на большой высоте от земли.">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/index-page/photo-bridge-desktop.jpg 1x, img/index-page/photo-bridge-desktop.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/index-page/photo-bridge-tablet.jpg 1x, img/index-page/photo-bridge-tablet@2.jpg 2x">
+            <img src="img/index-page/photo-bridge.jpg" srcset="img/index-page/photo-bridge@2.jpg 2x"
+              alt="Огромный скалисты мост на большой высоте от земли.">
+          </picture>
         </div>
 
         <div class="reasons__other-reasons other-reasons">
