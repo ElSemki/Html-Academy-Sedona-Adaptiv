@@ -6,6 +6,15 @@
   background-repeat: no-repeat;
   background-position: 20px 90px, left bottom, right bottom, 50%;
 
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../../img/index-page/text-index.svg"),
+      url("../../img/index-page/intro-triangle-mobile.svg"),
+      url("../../img/index-page/back-mobile@2.jpg");
+    background-position: 20px 90px, left bottom, right bottom, 50%;
+    background-size: 282px auto, 320px auto, cover;
+  }
+
   @media (min-width: @tablet-width) {
     background-image:
       url("../../img/index-page/text-index.svg"),
@@ -14,5 +23,13 @@
     background-repeat: no-repeat;
     background-position: 50% 46%, bottom, 50%;
     background-size: 461px 350px, auto, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../../img/index-page/text-index.svg"),
+        url("../../img/index-page/intro-triangle.svg"),
+        url("../../img/index-page/back-desktop.jpg");
+      background-size: 461px 350px, auto, cover;
+    }
   }
 }

@@ -2,9 +2,17 @@
   background-image:
     url("../../img/form-page/sedona.svg"),
     url("../../img/index-page/intro-triangle-mobile.svg"),
-    url("../../img/form-page/back-mobile.jpg");
+    url("../../img/index-page/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 45px 55px, bottom, 50%;
+  background-position: 45px 55px, bottom, 50% 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../../img/form-page/sedona.svg"),
+      url("../../img/index-page/intro-triangle-mobile.svg"),
+      url("../../img/index-page/back-mobile.jpg");
+    background-size: 229px auto, 320px auto, cover;
+  }
 
   @media (min-width: @tablet-width) {
     background-image:
@@ -12,7 +20,14 @@
       url("../../img/index-page/intro-triangle.svg"),
       url("../../img/form-page/back-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: 50.5% 45%, bottom, 50%;
+    background-position: 50% 45%, bottom, 50%;
     background-size: 460px 78px, 1200px 57px, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../../img/form-page/sedona.svg"),
+        url("../../img/index-page/intro-triangle.svg"),
+        url("../../img/form-page/back-desktop@2.jpg");
+    }
   }
 }
