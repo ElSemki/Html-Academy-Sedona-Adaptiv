@@ -1,16 +1,21 @@
 .popup {
-  display: none;
+  position: absolute;
+  // display: none;
+  width: 320px;
   text-align: center;
+  background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
-  &--attraction {
+  &--error-popup {
+    bottom: 462px;
+
     @media (min-width: @tablet-width) {
       width: 400px;
       margin: 0 auto;
     }
   }
 
-  &--emotions {
+  &--submit-popup {
     @media (min-width: @tablet-width) {
       width: 640px;
       margin: 0 auto;
@@ -19,25 +24,34 @@
 }
 
 .popup__wrapper {
-  padding: 20px 40px 35px;
+  padding: 20px 41px 35px;
 
-  &--attraction-popup {
+  &--error-popup {
     @media (min-width: @tablet-width) {
       padding: 15px 64px 49px;
     }
   }
 
-  &--emotions-popup {
+  &--submit-popup {
     @media (min-width: @tablet-width) {
       padding: 19px 99px 26px 97px;
     }
   }
 }
 
+.popup__title {
+  margin-bottom: 28px;
+}
+
+.popup__subtitle {
+  margin-bottom: 22px;
+  line-height: 24px;
+}
+
 .popup__button {
   padding: 20px;
 
-  &--emotions-popup {
+  &--submit-popup {
     background-color: #f2f2f2;
 
     @media (min-width: @tablet-width) {
