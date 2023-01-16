@@ -71,6 +71,16 @@
   }
 }
 
-.popup__button--submit-popup {
-  width: 100%;
+.popup__button {
+  &--error {
+    width: 180px;
+
+    @media (min-width: @tablet-width) {
+      width: 272px;
+    }
+  }
+
+  &--submit-popup {
+    width: 100%;
+  }
 }
