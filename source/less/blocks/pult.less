@@ -79,6 +79,10 @@
   border: none;
   cursor: pointer;
 
+  & svg {
+    fill: #5c6870;
+  }
+
   @media (min-width: @tablet-width) {
     top: 25px;
   }
@@ -108,14 +112,14 @@
   }
 
   @media (min-width: @tablet-width) {
-    & path {
+    & svg {
       fill: #ffffff;
     }
   }
 }
 
-.pult__button:hover path,
-.pult__button:focus path {
+.pult__button:hover svg,
+.pult__button:focus svg {
   fill: #333333;
 
   @media (min-width: @tablet-width) {
@@ -124,7 +128,7 @@
   }
 }
 
-.pult__button:active path {
+.pult__button:active svg {
   fill: #333333;
   opacity: 0.3;
 
