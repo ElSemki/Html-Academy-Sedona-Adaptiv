@@ -23,10 +23,10 @@ const styles = () => {
     .pipe(less())
     .pipe(postcss([
       autoprefixer(),
+      csso()
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(postcss([
-      csso()
     ]))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
