@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Photo</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -73,6 +75,13 @@
               <div class="photo-list__photo-container">
                 <a class="photo-list__photo-link" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/photo-page/photo-1-desktop.webp 1x, img/photo-page/photo-1-desktop@2.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/photo-page/photo-1-tablet.webp 1x, img/photo-page/photo-1-tablet@2.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/photo-page/photo-1-mobile.webp 1x, img/photo-page/photo-1-mobile@2.webp 2x">
+
                     <source media="(min-width: 1200px)"
                       srcset="img/photo-page/photo-1-desktop.jpg 1x, img/photo-page/photo-1-desktop@2.jpg 2x">
                     <source media="(min-width: 768px)"
@@ -103,6 +112,13 @@
               <div class="photo-list__photo-container">
                 <a class="photo-list__photo-link" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/photo-page/photo-2-desktop.webp 1x, img/photo-page/photo-2-desktop@2.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/photo-page/photo-2-tablet.webp 1x, img/photo-page/photo-2-tablet@2.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/photo-page/photo-2-mobile.webp 1x, img/photo-page/photo-2-mobile@2.webp 2x">
+
                     <source media="(min-width: 1200px)"
                       srcset="img/photo-page/photo-2-desktop.jpg 1x, img/photo-page/photo-2-desktop@2.jpg 2x">
                     <source media="(min-width: 768px)"
@@ -133,6 +149,13 @@
               <div class="photo-list__photo-container">
                 <a class="photo-list__photo-link" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/photo-page/photo-3-desktop.webp 1x, img/photo-page/photo-3-desktop@2.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/photo-page/photo-3-tablet.webp 1x, img/photo-page/photo-3-tablet@2.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/photo-page/photo-3-mobile.webp 1x, img/photo-page/photo-3-mobile@2.webp 2x">
+
                     <source media="(min-width: 1200px)"
                       srcset="img/photo-page/photo-3-desktop.jpg 1x, img/photo-page/photo-3-desktop@2.jpg 2x">
                     <source media="(min-width: 768px)"
@@ -163,6 +186,13 @@
               <div class="photo-list__photo-container">
                 <a class="photo-list__photo-link" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/photo-page/photo-4-desktop.webp 1x, img/photo-page/photo-4-desktop@2.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/photo-page/photo-4-tablet.webp 1x, img/photo-page/photo-4-tablet@2.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/photo-page/photo-4-mobile.webp 1x, img/photo-page/photo-4-mobile@2.webp 2x">
+
                     <source media="(min-width: 1200px)"
                       srcset="img/photo-page/photo-4-desktop.jpg 1x, img/photo-page/photo-4-desktop@2.jpg 2x">
                     <source media="(min-width: 768px)"
@@ -199,6 +229,13 @@
             </div>
             <div class="video-content__video">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-page/video-desktop.webp 1x, img/photo-page/video-desktop@2.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-page/video-tablet.webp 1x, img/photo-page/video-tablet@2.webp 2x">
+                <source type="image/webp"
+                  srcset="img/photo-page/video-mobile.webp 1x, img/photo-page/video-mobile@2.webp 2x">
+
                 <source media="(min-width: 1200px)"
                   srcset="img/photo-page/video-desktop.jpg 1x, img/photo-page/video-desktop@2.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -289,7 +326,7 @@
 
   </div>
 
-  <script src="js/navigation.js"></script>
+  <script src="js/navigation.min.js"></script>
 
 </body>
 

@@ -5,8 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sedona</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -121,6 +123,13 @@
             </p>
           </div>
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/index-page/photo-bridge-desktop.webp 1x, img/index-page/photo-bridge-desktop@2.webp 2x">
+            <source type="imaga/webp" media="(min-width: 768px)"
+              srcset="img/index-page/photo-bridge-tablet.webp 1x, img/index-page/photo-bridge-tablet@2.webp 2x">
+            <source type="image/webp"
+              srcset="img/index-page/photo-bridge.webp 1x, img/index-page/photo-bridge@2.webp 2x">
+
             <source media="(min-width: 1200px)"
               srcset="img/index-page/photo-bridge-desktop.jpg 1x, img/index-page/photo-bridge-desktop@2.jpg 2x">
             <source media="(min-width: 768px)"
@@ -177,6 +186,12 @@
         </div>
         <div class="interest__map">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/index-page/map-desktop.webp 1x, img/index-page/map-desktop@2.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/index-page/map-tablet.webp 1x, img/index-page/map-tablet@2.webp 2x">
+            <source type="image/webp" srcset="img/index-page/map-mobile.webp 1x, img/index-page/map-mobile@2.webp 2x">
+
             <source media="(min-width: 1200px)"
               srcset="img/index-page/map-desktop.jpg 1x, img/index-page/map-desktop@2.jpg 2x">
             <source media="(min-width: 768px)"
@@ -238,7 +253,7 @@
     </footer>
   </div>
 
-  <script src="js/navigation.js"></script>
+  <script src="js/navigation.min.js"></script>
 </body>
 
 </html>
